@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(196, 236, 250);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+/* HEADER */
+
+#title {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body h2,
+p {
+    padding: 10px;
+}
+
+/* HERO PICTURE */
+
+.hero {
+    width: 100%;
+    background-color: rgb(130, 192, 213);
+    background-image: url("cia-gould-5-WsIPUwhlI-unsplash.jpg");
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+/* CONTENT */
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    background-color: aliceblue;
+    border-radius: 30px;
+    height: 320px;
+    width: 340px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#loginForm h1 {
+    text-transform: uppercase;
+}
+
+/* INPUT FIELDS */
+
+#loginForm input[type="user"],
+#loginForm input[type="password"] {
+    border: 3px solid rgb(26, 96, 154);
+    border-radius: 24px;
+    background: none;
+    display: block;
+
+    text-align: center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+}
+
+/* CLICK EFFECT */
+
+#loginForm input[type="user"]:focus,
+#loginForm input[type="password"]:focus {
+    border-color: rgb(16, 105, 105);
+}
+
+#loginBtn:active {
+    box-shadow: 2px 2px 6px #02034f;
+}
+
+/* SUBMIT BUTTON */
+
+#loginBtn,
+.newButton {
+    border: 3px solid rgb(54, 136, 172);
+    background: rgb(66, 166, 209);
+    border-radius: 24px;
+    background: none;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    padding: 14px 35px;
+    width: 220px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* HOVER EFFECT */
+
+#loginBtn:hover {
+    background: rgb(66, 166, 209);
+    color: white;
+}
