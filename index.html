@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- länk till CSS dokumentet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap">
+    <!-- länk till Google Font's bibliotek -->
 
-    <title>Inloggningssida</title>
+    <title>Inloggningssida Simsällskapet</title>
+    <!-- titel på webbsidan (visas i fliken på webbläsaren) -->
 </head>
 
 <body>
-    <h1>test test </h1>
+    <!-- HEADER -->
+
+    <div class="hero">
+        <h2 id="title">Simsällskapet</h2>
+
+        <div class="rules">
+            <h2>Regler</h2>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </div>
+    </div>
+
+    <!-- INLOGGNINGSFORMULÄR -->
+    <form id="loginForm" action="index.html" class="textbox" method="post">
+        <div class="flexbox">
+            <div class="label">
+                <h1>
+                    <p id="loginTitle">Logga in</p>
+                </h1>
+                <input type="user" name="" placeholder="Användarnamn" id="username">
+                <input type="password" name="" placeholder="Lösenord" id="password">
+                <button type="button" id="loginBtn">Logga in</button>
+            </div>
+        </div>
+    </form>
 
     <script src="script.js"></script>
+    <!-- länk till Javascript dokumentet -->
 </body>
 
 </html>
