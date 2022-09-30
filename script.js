@@ -2,14 +2,16 @@
 const loginBtn = document.getElementById("loginBtn");
 const loginTitle = document.getElementById("loginTitle");
 const loginStatus = localStorage.getItem("loginStatus");
+const forgotPassword = document.getElementById("forgotPassword");
 
 //skapar en funktion för att kontrollera om användaren är inloggad
 function checkLoginStatus() {
     //om inloggningen är sant så utförs detta
     if (loginStatus == "true") {
-        //anropar funktionen hideHTMLTag som döljer input-fönstrerna
+        //anropar funktionen hideHTMLTag som döljer input-fönstrerna och länk till 'Glömt lösenord'
         hideHTMLTag("username");
         hideHTMLTag("password");
+        hideHTMLTag("forgotPassword");
 
         //ersätter 'Logga in'-knapp med 'Logga ut'-knapp
         loginBtn.innerHTML = "Logga ut";
