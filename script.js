@@ -28,15 +28,12 @@ loginBtn.onclick = function () {
         localStorage.setItem("loginStatus", false);
 
         localStorage.removeItem("username");
-        localStorage.removeItem("password");
 
         location.reload();
-
     } else if (username == "Sara" && password == "qwe123") {
         localStorage.setItem("loginStatus", true);
-        
+
         localStorage.setItem("username", username);
-        localStorage.setItem("password", password);
 
         location.reload();
     } else {
